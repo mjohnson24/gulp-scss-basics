@@ -1,20 +1,30 @@
 // Bootstrap Sass files ( @import imports everything below)
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'vendors/vendors';
 
-// Variable Overrides (This needs to be before the @import below that imports all bootstrap sass files)
-$primary: #ffd633;
-$secondary: #131516;
-$lightGrey: #797979;
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
 
-/******************** GENERAL STYLES ********************/
-body {
-	background-color: $primary;
-}
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
 
-h1 {
-	color: $lightGrey;
-}
+@import 'base/reset';
+@import 'base/typography';
 
-h2 {
-	color: $lightGrey;
-}
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/slider';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
